@@ -1,0 +1,15 @@
+url http://192.168.30.128:8080/crm/HomePage.do
+username rashmi@dell.com
+password 123456
+
+
+
+
+
+WebDriverManager.chromedriver().setup();
+	WebDriver driver=new ChromeDriver();
+	driver.get(URL);
+	driver.findElement(By.name("email")).sendKeys(USERNAME);
+	driver.findElement(By.name("password")).sendKeys(PASSWORD);
+	driver.findElement(By.name("login")).click();
+	
